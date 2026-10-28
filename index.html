@@ -131,15 +131,10 @@
     <div class="grid" id="games-grid"></div>
 
     <script>
-        const pathSegments = window.location.pathname.split('/').filter(Boolean);
-        const repoUser = window.location.hostname.split('.')[0];
-        const repoName = pathSegments[0] || '';
-        const folderPath = 'offline'; // Pointing to your specific games folder!
-
         async function loadGames() {
             try {
-                // Fixed broken dynamic template string url syntax from original code
-                const response = await fetch(`https://github.com{repoUser}/${repoName}/contents/${folderPath}`);
+                // Fixed: Now uses the official api.github.com directory scanning URL directly
+                const response = await fetch(`https://github.com`);
                 if (!response.ok) throw new Error();
                 const files = await response.json();
                 document.getElementById('loading').style.display = 'none';
@@ -149,7 +144,7 @@
                 htmlFiles.forEach(file => {
                     let cleanName = file.name.replace('.html', '').replace(/-/g, ' ').replace(/_/g, ' ');
                     const card = document.createElement('a');
-                    card.href = `./${folderPath}/${file.name}`;
+                    card.href = `./offline/${file.name}`;
                     card.className = 'game-card';
                     card.setAttribute('data-name', cleanName);
                     card.innerHTML = `<h3>${cleanName}</h3><div class="play-btn">🎮 Play Now</div>`;
