@@ -1,158 +1,517 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Classroom</title>
-    
-    <!-- Link the games list created by your python script -->
-    <script src="games.js"></script>
+    <title>Unblocked Games21</title>
+
+    <script src="games.js" defer></script>
 
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :root {
+            --bg: #f8f9fa;
+            --surface: #ffffff;
+            --text: #202124;
+            --muted: #5f6368;
+            --border: #dadce0;
+            --blue: #1a73e8;
         }
 
         body {
-            background-color: #0d1117;
-            color: #ffffff;
-            padding: 20px;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #21262d;
+        /* Classroom-inspired top bar */
+        .topbar {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 15px 24px;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            color: #58a6ff;
-            margin-bottom: 10px;
+        .classroom-logo {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
         }
 
-        header p {
-            color: #8b949e;
+        .brand {
+            font-size: 21px;
+            font-weight: 500;
+            white-space: nowrap;
         }
 
-        /* Responsive 350+ Game Card Grid Layout */
+        .brand span {
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .search-wrap {
+            flex: 1;
+            max-width: 580px;
+            margin-left: auto;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f1f3f4;
+            border: 1px solid transparent;
+            border-radius: 28px;
+            padding: 0 17px;
+            transition: box-shadow .2s, background .2s;
+        }
+
+        .search-box:focus-within {
+            background: white;
+            border-color: #c5d7f7;
+            box-shadow: 0 1px 5px #00000020;
+        }
+
+        .search-box input {
+            border: 0;
+            outline: none;
+            background: transparent;
+            padding: 13px 0;
+            width: 100%;
+            font-size: 15px;
+            color: var(--text);
+        }
+
+        .search-icon {
+            color: var(--muted);
+            font-size: 19px;
+        }
+
+        .avatar {
+            display: grid;
+            place-items: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: #d2e3fc;
+            color: #174ea6;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        main {
+            max-width: 1450px;
+            padding: 30px 28px 60px;
+            margin: auto;
+        }
+
+        .welcome {
+            margin-bottom: 25px;
+        }
+
+        .welcome h1 {
+            font-size: 27px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .welcome p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin: 24px 0 16px;
+        }
+
+        .section-heading h2 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        #resultCount {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
         .arcade-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 25px;
-            max-width: 1400px;
-            margin: 0 auto;
+            grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+            gap: 18px;
         }
 
-        /* Individual Game Card Styling */
         .game-card {
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            overflow: hidden;
             display: flex;
             flex-direction: column;
-            transition: transform 0.2s, box-shadow 0.2s;
+            min-width: 0;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
             text-decoration: none;
             color: inherit;
+            transition: transform .18s, box-shadow .18s, border-color .18s;
         }
 
         .game-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
-            border-color: #58a6ff;
+            transform: translateY(-3px);
+            border-color: #a8c7fa;
+            box-shadow: 0 3px 10px #00000012;
         }
 
-        /* Container to keep images square and neat */
+        .game-card:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #8ab4f8;
+            outline-offset: 3px;
+        }
+
         .image-container {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            background-color: #0d1117;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid #30363d;
+            aspect-ratio: 16 / 10;
+            background: #f1f3f4;
+            border-bottom: 1px solid #eeeeee;
+            overflow: hidden;
         }
 
         .game-logo {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
 
         .game-info {
-            padding: 15px;
-            text-align: center;
-            flex-grow: 1;
+            padding: 13px 14px 15px;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            gap: 7px;
+            flex: 1;
         }
 
         .game-title {
-            font-size: 1rem;
+            font-size: 14px;
+            line-height: 1.4;
             font-weight: 600;
-            color: #c9d1d9;
-            /* Prevents long game names from breaking the card layout */
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;  
-            overflow: hidden;
+            overflow-wrap: anywhere;
+        }
+
+        .game-subtitle {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .message {
+            padding: 28px 12px;
+            text-align: center;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .message strong {
+            color: var(--text);
+        }
+
+        .load-more-wrap {
+            text-align: center;
+            padding-top: 28px;
+        }
+
+        #loadMore {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        #loadMore:hover {
+            background: #f1f3f4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #80868b;
+            font-size: 12px;
+            border-top: 1px solid #e8eaed;
+        }
+
+        @media (max-width: 600px) {
+            .topbar {
+                padding: 12px 14px;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .classroom-logo {
+                width: 34px;
+                height: 34px;
+            }
+
+            .brand {
+                font-size: 18px;
+            }
+
+            .search-wrap {
+                flex-basis: 100%;
+                max-width: none;
+                order: 3;
+            }
+
+            .avatar {
+                margin-left: auto;
+            }
+
+            main {
+                padding: 23px 15px 40px;
+            }
+
+            .welcome h1 {
+                font-size: 23px;
+            }
+
+            .arcade-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
         }
     </style>
 </head>
-<body>
 
-    <header>
-        <h1>Unblocked Games21 </h1>
-        <p>By Samin Vajipeyajula</p>
+<body>
+    <header class="topbar">
+        <!-- Classroom-inspired logo -->
+        <svg class="classroom-logo"
+             viewBox="0 0 48 48"
+             role="img"
+             aria-label="Classroom-inspired logo">
+            <rect x="3" y="4" width="42" height="40" rx="7"
+                  fill="#ffffff" stroke="#dadce0"/>
+            <path d="M9 14 L24 6 L39 14"
+                  fill="none" stroke="#34a853" stroke-width="4"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="10" y="15" width="28" height="20" rx="3"
+                  fill="#4285f4"/>
+            <rect x="14" y="19" width="20" height="12" rx="2"
+                  fill="#ffffff"/>
+            <circle cx="19" cy="24" r="2.5" fill="#fbbc04"/>
+            <circle cx="29" cy="24" r="2.5" fill="#ea4335"/>
+            <path d="M17 29 Q24 24 31 29"
+                  fill="none" stroke="#34a853" stroke-width="2"/>
+        </svg>
+
+        <div class="brand">Classroom <span>Games</span></div>
+
+        <div class="search-wrap">
+            <label class="search-box">
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="Search for a game..."
+                    aria-label="Search games"
+                    autocomplete="off"
+                >
+            </label>
+        </div>
+
+        <div class="avatar" title="Game player" aria-label="Player profile">S</div>
     </header>
 
-    <!-- The container where javascript will inject all 350+ game cards -->
-    <main id="gameGrid" class="arcade-grid"></main>
+    <main>
+        <section class="welcome">
+            <h1>Hey, welcome back 👋</h1>
+            <p>Your games, all in one place. Find something fun to play.</p>
+        </section>
+
+        <div class="section-heading">
+            <h2>All games</h2>
+            <span id="resultCount">Loading games...</span>
+        </div>
+
+        <section id="gameGrid" class="arcade-grid"
+                 aria-label="Games" aria-live="polite"></section>
+
+        <p id="emptyMessage" class="message" hidden>
+            <strong>No games found.</strong><br>
+            Try another search, maybe a shorter name?
+        </p>
+
+        <p id="loadError" class="message" hidden>
+            <strong>Hmm, the games didn't load.</strong><br>
+            Check that games.js exists and contains a window.GAMES array.
+        </p>
+
+        <div class="load-more-wrap">
+            <button id="loadMore" type="button" hidden>Show more games</button>
+        </div>
+    </main>
+
+    <footer>
+        Unblocked Games21 · Made for a little fun between things
+    </footer>
 
     <script>
-        // Wait for the HTML document to fully load
         document.addEventListener("DOMContentLoaded", () => {
             const grid = document.getElementById("gameGrid");
+            const searchInput = document.getElementById("searchInput");
+            const resultCount = document.getElementById("resultCount");
+            const emptyMessage = document.getElementById("emptyMessage");
+            const loadError = document.getElementById("loadError");
+            const loadMore = document.getElementById("loadMore");
 
-            // Verify window.GAMES exists from games.js
-            if (!window.GAMES || window.GAMES.length === 0) {
-                grid.innerHTML = "<p style='grid-column: 1/-1; text-align: center; color: #ff7b72;'>No games found! Make sure you ran 'python generate.py' and uploaded games.js.</p>";
+            const PAGE_SIZE = 60;
+            let filteredGames = [];
+            let visibleCount = PAGE_SIZE;
+
+            // A small bit of personality without affecting functionality.
+            const subtitles = [
+                "A little break",
+                "Worth a try",
+                "Quick play?",
+                "One more round",
+                "Your next game"
+            ];
+
+            function getGames() {
+                return Array.isArray(window.GAMES)
+                    ? window.GAMES.filter(game =>
+                        game &&
+                        typeof game.name === "string" &&
+                        typeof game.url === "string"
+                    )
+                    : [];
+            }
+
+            function makeFallback(name) {
+                const letter = (name.trim()[0] || "?").toUpperCase();
+                const svg = `
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="300" height="200" viewBox="0 0 300 200">
+                        <rect width="300" height="200" rx="12" fill="#e8f0fe"/>
+                        <circle cx="150" cy="86" r="47" fill="#4285f4"/>
+                        <text x="150" y="105" text-anchor="middle"
+                              font-family="Arial" font-size="52"
+                              font-weight="bold" fill="white">${letter}</text>
+                        <text x="150" y="169" text-anchor="middle"
+                              font-family="Arial" font-size="15"
+                              fill="#174ea6">Game logo</text>
+                    </svg>`;
+                return "data:image/svg+xml;charset=UTF-8," +
+                    encodeURIComponent(svg);
+            }
+
+            function createCard(game, index) {
+                const card = document.createElement("a");
+                card.className = "game-card";
+                card.href = game.url;
+
+                // Keep local games local, while allowing hosted game links.
+                card.rel = "noopener noreferrer";
+
+                const imageContainer = document.createElement("div");
+                imageContainer.className = "image-container";
+
+                const img = document.createElement("img");
+                img.className = "game-logo";
+                img.alt = game.name + " logo";
+                img.loading = "lazy";
+                img.src = typeof game.img === "string" && game.img
+                    ? game.img
+                    : makeFallback(game.name);
+
+                img.addEventListener("error", () => {
+                    img.onerror = null;
+                    img.src = makeFallback(game.name);
+                }, { once: true });
+
+                imageContainer.appendChild(img);
+
+                const info = document.createElement("div");
+                info.className = "game-info";
+
+                const title = document.createElement("span");
+                title.className = "game-title";
+                title.textContent = game.name;
+
+                const subtitle = document.createElement("span");
+                subtitle.className = "game-subtitle";
+                subtitle.textContent = subtitles[index % subtitles.length];
+
+                info.append(title, subtitle);
+                card.append(imageContainer, info);
+
+                return card;
+            }
+
+            function render() {
+                grid.replaceChildren();
+
+                const visibleGames = filteredGames.slice(0, visibleCount);
+                const fragment = document.createDocumentFragment();
+
+                visibleGames.forEach((game, index) => {
+                    fragment.appendChild(createCard(game, index));
+                });
+
+                grid.appendChild(fragment);
+
+                resultCount.textContent = filteredGames.length === 0
+                    ? "0 games"
+                    : `${filteredGames.length} games`;
+
+                emptyMessage.hidden = filteredGames.length !== 0;
+                loadMore.hidden = visibleCount >= filteredGames.length;
+                loadMore.textContent = "Show more games";
+            }
+
+            const games = getGames();
+
+            if (games.length === 0) {
+                resultCount.textContent = "No games loaded";
+                loadError.hidden = false;
+                searchInput.disabled = true;
+                loadMore.hidden = true;
                 return;
             }
 
-            // Loop through your 350+ games and build cards dynamically
-            window.GAMES.forEach(game => {
-                const card = document.createElement("a");
-                card.className = "game-card";
-                card.href = game.url; // Links straight to your local index.html or game folder
+            filteredGames = games;
+            render();
 
-                // Safety: If github repo logo fails (404), it falls back to a clean initial badge
-                const initialsFallback = `https://dicebear.com{encodeURIComponent(game.name)}&backgroundColor=58a6ff`;
+            searchInput.addEventListener("input", () => {
+                const query = searchInput.value.trim().toLowerCase();
 
-                card.innerHTML = `
-                    <div class="image-container">
-                        <img 
-                            src="${game.img}" 
-                            alt="${game.name} Logo" 
-                            class="game-logo"
-                            onerror="this.onerror=null; this.src='${initialsFallback}';"
-                        >
-                    </div>
-                    <div class="game-info">
-                        <span class="game-title">${game.name}</span>
-                    </div>
-                `;
+                filteredGames = games.filter(game =>
+                    game.name.toLowerCase().includes(query)
+                );
 
-                grid.appendChild(card);
+                visibleCount = PAGE_SIZE;
+                render();
+            });
+
+            loadMore.addEventListener("click", () => {
+                visibleCount += PAGE_SIZE;
+                render();
             });
         });
     </script>
-
 </body>
 </html>
