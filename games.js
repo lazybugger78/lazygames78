@@ -172,7 +172,14 @@ window.GAMES = [
  {
   "name": "Bad Time Simulator",
   "url": "games/bad-time-simulator.html",
-  "img": ""
+  "img": "<iframe 
+  src="https://jcw87.github.io/c2-sans-fight/" 
+  width="640" 
+  height="480" 
+  allowfullscreen 
+  style="border: none;"
+  title="Bad Time Simulator">
+</iframe>"
  },
  {
   "name": "Baldis Basics",
