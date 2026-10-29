@@ -133,7 +133,6 @@
     <script>
         async function loadGames() {
             try {
-                // Fixed: Now uses the official api.github.com directory scanning URL directly
                 const response = await fetch(`https://github.com`);
                 if (!response.ok) throw new Error();
                 const files = await response.json();
