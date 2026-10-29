@@ -3,176 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LazyGames78 Hub</title>
+    <title>My Unblocked Games Arcade</title>
+    
+    <!-- Link the games list created by your python script -->
+    <script src="games.js"></script>
+
     <style>
         * {
             box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: #0b0c10;
-            color: #c5c6c7;
-            text-align: center;
-            padding: 40px 20px;
             margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        h1 {
-            color: #66fcf1;
-            font-size: 3.5rem;
-            margin: 0 0 10px 0;
-            font-weight: 800;
-            letter-spacing: -1px;
-            text-transform: uppercase;
-            text-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
+
+        body {
+            background-color: #0d1117;
+            color: #ffffff;
+            padding: 20px;
         }
-        .subtitle {
-            color: #45f3ff;
+
+        header {
+            text-align: center;
             margin-bottom: 40px;
-            font-size: 1.1rem;
-            opacity: 0.8;
-            letter-spacing: 1px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #21262d;
         }
-        .search-container {
-            position: relative;
-            max-width: 600px;
-            margin: 0 auto 50px auto;
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #58a6ff;
+            margin-bottom: 10px;
         }
-        .search-bar {
-            width: 100%;
-            padding: 18px 28px;
-            font-size: 1.2rem;
-            background: #1f2833;
-            border: 2px solid #45f3ff;
-            border-radius: 50px;
-            color: #fff;
-            outline: none;
-            transition: 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+        header p {
+            color: #8b949e;
         }
-        .search-bar:focus {
-            border-color: #66fcf1;
-            box-shadow: 0 0 25px rgba(102, 252, 241, 0.4);
-        }
-        .grid {
+
+        /* Responsive 350+ Game Card Grid Layout */
+        .arcade-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 25px;
-            max-width: 1300px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 10px;
         }
+
+        /* Individual Game Card Styling */
         .game-card {
-            background: #1f2833;
-            border: 1px solid #2f3542;
-            border-radius: 16px;
-            padding: 25px;
-            text-decoration: none;
-            color: white;
-            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            height: 140px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
         }
+
         .game-card:hover {
-            transform: translateY(-8px);
-            border-color: #66fcf1;
-            background: #0b0c10;
-            box-shadow: 0 12px 24px rgba(102, 252, 241, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
+            border-color: #58a6ff;
         }
-        .game-card h3 {
-            margin: 0;
-            font-size: 1.3rem;
-            color: #fff;
-            text-transform: capitalize;
+
+        /* Container to keep images square and neat */
+        .image-container {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: #0d1117;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .game-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .game-info {
+            padding: 15px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .game-title {
+            font-size: 1rem;
             font-weight: 600;
-            white-space: nowrap;
+            color: #c9d1d9;
+            /* Prevents long game names from breaking the card layout */
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
             overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .game-card:hover h3 {
-            color: #66fcf1;
-        }
-        .game-card .play-btn {
-            margin-top: 12px;
-            font-size: 0.8rem;
-            color: #66fcf1;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-            opacity: 0.6;
-        }
-        .game-card:hover .play-btn {
-            opacity: 1;
-        }
-        #no-results {
-            display: none;
-            color: #ff4757;
-            font-size: 1.3rem;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        #loading {
-            font-size: 1.5rem;
-            color: #66fcf1;
-            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>💤 LazyGames78</h1>
-    <p class="subtitle">350+ Games • Unblocked • Instant Play</p>
-    <div class="search-container">
-        <input type="text" id="search" class="search-bar" placeholder="Type a game name to search instantly..." onkeyup="filterGames()">
-    </div>
-    <p id="loading">⚡ Loading Game Arcade Vault...</p>
-    <p id="no-results">❌ No games found matching that search.</p>
-    <div class="grid" id="games-grid"></div>
+
+    <header>
+        <h1>Unblocked Arcade</h1>
+        <p>Browse through over 350+ classic offline games!</p>
+    </header>
+
+    <!-- The container where javascript will inject all 350+ game cards -->
+    <main id="gameGrid" class="arcade-grid"></main>
 
     <script>
-        async function loadGames() {
-            try {
-                const response = await fetch(`https://github.com`);
-                if (!response.ok) throw new Error();
-                const files = await response.json();
-                document.getElementById('loading').style.display = 'none';
-                const grid = document.getElementById('games-grid');
-                const htmlFiles = files.filter(file => file.name.endsWith('.html'));
-                
-                htmlFiles.forEach(file => {
-                    let cleanName = file.name.replace('.html', '').replace(/-/g, ' ').replace(/_/g, ' ');
-                    const card = document.createElement('a');
-                    card.href = `./offline/${file.name}`;
-                    card.className = 'game-card';
-                    card.setAttribute('data-name', cleanName);
-                    card.innerHTML = `<h3>${cleanName}</h3><div class="play-btn">🎮 Play Now</div>`;
-                    grid.appendChild(card);
-                });
-            } catch (err) {
-                document.getElementById('loading').innerText = "⚠️ Error reading the games directory.";
-            }
-        }
+        // Wait for the HTML document to fully load
+        document.addEventListener("DOMContentLoaded", () => {
+            const grid = document.getElementById("gameGrid");
 
-        function filterGames() {
-            let input = document.getElementById('search').value.toLowerCase();
-            let cards = document.getElementsByClassName('game-card');
-            let noResults = document.getElementById('no-results');
-            let visibleCount = 0;
-            
-            for (let i = 0; i < cards.length; i++) {
-                let name = cards[i].getAttribute('data-name').toLowerCase();
-                if (name.includes(input)) {
-                    cards[i].style.display = "flex";
-                    visibleCount++;
-                } else {
-                    cards[i].style.display = "none";
-                }
+            // Verify window.GAMES exists from games.js
+            if (!window.GAMES || window.GAMES.length === 0) {
+                grid.innerHTML = "<p style='grid-column: 1/-1; text-align: center; color: #ff7b72;'>No games found! Make sure you ran 'python generate.py' and uploaded games.js.</p>";
+                return;
             }
-            noResults.style.display = visibleCount === 0 ? "block" : "none";
-        }
 
-        loadGames();
+            // Loop through your 350+ games and build cards dynamically
+            window.GAMES.forEach(game => {
+                const card = document.createElement("a");
+                card.className = "game-card";
+                card.href = game.url; // Links straight to your local index.html or game folder
+
+                // Safety: If github repo logo fails (404), it falls back to a clean initial badge
+                const initialsFallback = `https://dicebear.com{encodeURIComponent(game.name)}&backgroundColor=58a6ff`;
+
+                card.innerHTML = `
+                    <div class="image-container">
+                        <img 
+                            src="${game.img}" 
+                            alt="${game.name} Logo" 
+                            class="game-logo"
+                            onerror="this.onerror=null; this.src='${initialsFallback}';"
+                        >
+                    </div>
+                    <div class="game-info">
+                        <span class="game-title">${game.name}</span>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        });
     </script>
+
 </body>
 </html>
