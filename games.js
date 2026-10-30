@@ -1737,7 +1737,7 @@ window.GAMES = [
  {
   "name": "Worlds Hardest Game 3",
   "url": "offline/worlds-hardest-game-3.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTdx2_seGAmplWoODCa4p3gquRwjLhC-nlPTo-I4sQ&s=10"
  },
  {
   "name": "Wrestle Bros",
