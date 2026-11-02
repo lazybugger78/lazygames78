@@ -347,47 +347,47 @@ window.GAMES = [
  {
   "name": "Candy Crush",
   "url": "offline/candy-crush.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHj2ptaFrADtTnX_m_pq9t2Id_N66DC6t6sD_g2HJsSTW_YOOKWEqT8-GLkOHPFi-QKphNq6HnPyuDRKbu32zFz3-W65AtYdROgTt9XSg5w&s=10"
  },
  {
   "name": "Capybara Clicker",
   "url": "offline/capybara-clicker.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnJF_kBeIEvAqANeBW5zLSy6YEtwzhJ-4FfCsFejhIA&s=10"
  },
  {
   "name": "Car Drawing",
   "url": "offline/car-drawing.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4KXyCWa31FDOmhlHAqTpWTHlApKr4ia3jxKW5AzbVQ&s=10"
  },
  {
   "name": "Car King Arena",
   "url": "offline/car-king-arena.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAzaqUF8RqpHL8ImgtdMZqzNy6LtHC9A6bovqyTHGOWQ&s=10"
  },
  {
   "name": "Chaos Faction 2",
   "url": "offline/chaos-faction-2.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZeDJrYdGjLNaM5AULuasq8fu-J0Se5HfSTqKV37zNg&s=10"
  },
  {
   "name": "Chess",
   "url": "offline/chess.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1uxYC9Ctem-GfT85jOGPAddzXIs2MZEWvyX58U4IYfw&s=10"
  },
  {
   "name": "Choppy Orc",
   "url": "offline/choppy-orc.html",
-  "img": ""
+  "img": "data:image/jpeg;base64,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"
  },
  {
   "name": "Circlo O",
   "url": "offline/circloO.html",
-  "img": ""
+  "img": "data:image/webp;base64,UklGRjAEAABXRUJQVlA4ICQEAAAQGgCdASq0AJYAPoFAnUmlJCMhJXjIuKAQCWVu4XHg9Rd67j6flQfMpH5wG2L8wHRu/1W+yb0BgKX9as8Yxs0GWrpFGct5UIVfnJ+cGT84Mn5wZPzgyYY58e75yfGpPpwmpCo4+FXLD9sKpbJcEzgZTSc7CSKXRwDB6dqILvAQFUD3EtS/a2fmlRAlbmDbYzvuOmCmOK6UMPQQ8wlCWlLdgr6QUTIybX70Ozbt/rzyA5/O0oLUH750n1ZC7adKtYOarQuPWvxJQEWbPf2dVENsT69lyGfBk94AAP79Lwf/zYH5dfLrl3/+Ic4p9ylaFpzhsncAAeweRWZ/2L7+zbJMi4Bmjk+DJo85UK+o/25gtIl8uU4Gjmgj3q7xV/rX1SuNQUSd/o8tomqvzlqzoDFq7mcYJxY9nQ5uT+oILJjTDyitCsqjKnBDxHAUeJ8mNeeGvVa+KhIPEC/8N+hxj840+LZeM1iONFc6ok9BNdo8gNnH6GOvayk6UtM+z2081v3Znes3XrrzatvSDvhbu4pE5q2DE9eJOuOnLrtNlLS6JyE7h5bRRrif5k/7vMJT21znah/GPW1IRDsAnm94g+jfUw/SklBC3qRt01K+seEnlJjeBNxMfVTP7nI03sWO3txr08fqB0EKkPAYmH8esF8juvsPHklhcJ6M2fHLJc35j5m4/HQl6enQmWRMU/5rUYeEW9KXQbPXnq4uI/jjqCjOEuTnz8MsQAswEIrpdBwp86HT5oRpk8HZLhf7u6Av7iZoA/9IJIOLameU+fBLV2kS/IQZc4libdloCYNIVuY3ikXAzqbNxtHrXh7V08zwvJYOC/TYxgcrejF0zUNFS5PJdtiaj44ykEBJL/bZIPxMrEoVt9TxqIR5ysVtWOoDBu8gs+DhxcbIj1oGqJgU7gf0bQ0Uwm4Fvl4X9onhcD86RYlL/N5lyoHgXgrvmPQf7FBwMpdFc9/jembJ8cJiB0ay2N84Wu3prbZsuGpMgDevcYsqbiFWsdzDala2p9rUKldxCIOzhpPwcDZ0niiJfw6TOdiro/4ipPNA9IZZ5+xpnOeiWu7g5jjFCSWSzEW9N0GTeq4CifFNQArhfZi3S0Y2ceCqO+oDXNKuEhtJcXhkuzv3Vr6/YvfpC5TT99/wR0JLq/U3VkvsF+WrAbXbhEoH31a30133fzyIIqt58XX4wXoNr149IFSEwp/wAcciybyuntEWarLCzOWHjtFzygqPWmwCK6Qhk1r+9hQq4tHm4ucxhrlGHMpvyyfxzSXDdlAFpFqr5ZXzxb/MFRQUBlCfcGqlEqXnzedmEcucdSZ492Nwk9PZMRNDdObT8lUg03GWd+KKfwpMAvHy6YXStoh911hsEglG/shghLrrhcoW35bHwIhSJTwXkkJNrF36CjpwAAAA"
  },
  {
   "name": "Circlo O 2",
   "url": "offline/circloO-2.html",
-  "img": ""
+  "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADYAXAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAgQFAwYB/8QAMBAAAgICAAQEBAQHAAAAAAAAAQIAAwQREiExQQUTUWEUMoGhIiNx4QYVJEJSwdH/xAAaAQACAwEBAAAAAAAAAAAAAAAAAwIEBQEG/8QAIBEAAgIBBAMBAAAAAAAAAAAAAAECEQMEEiExEyNBIv/aAAwDAQACEQMRAD8ApRErX15BvV6cjgXgKisrsFuxMy0e5boszG8V8dGDknHqp8x1ALktoDfPUur/ADBOAMKLQKzxnZUl+2pj+JeF5GdkV3eQarXr3bogrxDoOvXpGQSvkrajJk2etcm3gZaZ2KmRWCobkVPYiWZl+HVZWLjUUV4yKvAxcu/MP9PWd0XPbymttpQBG80Iu+fYjci1yMxzltVrkuxOOIlleOiXWm2wDm5GtztIjk7QiIgAmD47hHIzEcHX5YH3M3GZVG2YKPUnUzcrPxDcQL02v4Tvlzk4XYjU7XCmaki/y79OclEgPESKfKB6cpKACRf5SPXlJSLc2Ue+4ASiIgAiIgB5/wDiWnIe+p1VnpC6HCN6bfP/AFMl3uxwtbrwELvhI0dHnznqrvihmKUIFPfr7fT168/SeVzb/icu67s7Ej9O32liDtUZOqioycvrPbRESuaxzFiC5quNePXFw7566TpKWaPIvrzFWpVUausYHiCe0t1utiK6HiVgCpHcTrRGMuWmSkAytawBBKjRAPTckzKilnIVQNknoBKfhqHhtyHqrSy5+LaNsMvYwXQN/pIuxEThIRE5ZN9eNS11x0q/f2EAbSVsoeP5fw+GalP5l34f0Xv/AM+s8tO+blPmZDXWdT0H+I7CcJahHajD1Gbyzv4en8E8TbLBouG7UXfGP7h7+81oiIyKpGnpJyniTkfGUMpVgCD1BHIzNzKb8dLPhrj/AFDhNOTqoaPy66RE5HsblinGyv4Ul+RjmnzQ1VdzLcHG+NeXIen7zZRFrRURQqqNADsIidn2Q00V40yUREgPIXWrTS9rglUUsddeU8h4jn251vE/4a1+RB0H7z7EdiS7M7XzkqiuinERHGaf/9k="
  },
  {
   "name": "Clash Of Vikings",
