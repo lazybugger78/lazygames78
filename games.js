@@ -392,167 +392,167 @@ window.GAMES = [
  {
   "name": "Clash Of Vikings",
   "url": "offline/clash-of-vikings.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8QUVRWQejoHMXkxnZfR27vnZQUJM2P8VFTHbXLiaSA&s=10"
  },
  {
   "name": "Cleanup Io",
   "url": "offline/cleanup-io.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqmmpPWVshWyRjASx4nJNsFudXWTToBmqL_F8aWS3bQ&s=10"
  },
  {
   "name": "Cluster Rush",
   "url": "offline/cluster-rush.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSxrNgSi91oEdpPF7kvPK-34QcBVmtUW8WBK8igwoNmg&s=10"
  },
  {
   "name": "Cookie Clicker",
   "url": "offline/cookie-clicker.htm",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQU-JtKN7HGF1H9O97_hAq29-uSopYk0tfhWtcV1S6I-tscD7UqRI5C2qN3J2eqUBrHnYyEj5UTOB04yghbZJEeziu5XVqDqSq0HPovsfMQ&s=10"
  },
  {
   "name": "Coreball",
   "url": "offline/coreball.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu430h1oL4EqEzmkNps9eroZA95nwNttjAgeCOVdzqEQ&s=10"
  },
  {
   "name": "Crazy Cars",
   "url": "offline/crazy-cars.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gzTTUsLWWpGvISGwq-PftAFJOfVe6CgTg-cuJrW68Q&s=10"
  },
  {
   "name": "Crazy Cattle 3D",
   "url": "offline/crazy-cattle-3D.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbIWXcYWgX2SkTcZCSTuT9KrpOax214cCkwtEc7tjPg&s=10"
  },
  {
   "name": "Crazy Crash Landing",
   "url": "offline/crazy-crash-landing.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPRujqRiiu2KizSBmkecke_yRzyu1Yv3E3I_fxAgyU4g&s=10"
  },
  {
   "name": "Crazy Motorcycle",
   "url": "offline/crazy-motorcycle.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6WHUg7HuyPBe30IsGAGnwcvTXDJiQaZ7xkJaYZ79jpA&s=10"
  },
  {
   "name": "Crossy Road",
   "url": "offline/crossy-road.htm",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjDhSzYppaKTr6IIuxXqIqbU3IimFIEqopoJjOYqeQoQ&s=10"
  },
  {
   "name": "Cut The Rope",
   "url": "offline/cut-the-rope.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmcqzGxG7Wjs9x8MTO9DbqAAFWRmhEuUmrOHeYjjmLdQ&s=10"
  },
  {
   "name": "Cut The Rope 2",
   "url": "offline/cut-the-rope-2.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLz_m46cj19GK2FnCu2Bt8XELyoIm08w5bMK5eKPS6Q&s=10"
  },
  {
   "name": "Cut The Rope Holiday Gift",
   "url": "offline/cut-the-rope-holiday-gift.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBWPJ0dbAe4_fvAFZE7dM7Cs75gC07zYhlEv6Sh-iAw&s=10"
  },
  {
   "name": "Cut The Rope Time Travel",
   "url": "offline/cut-the-rope-time-travel.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBhMQ3nzPc5mn_OiNNPzr6hFLFA__CkS9ucVxG0Hhew&s=10"
  },
  {
   "name": "Dadish",
   "url": "offline/dadish.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfepm8cVe-Sm5yYRuAfpieHbp5VWE-KVwSw_gf3xs5PQ&s=10"
  },
  {
   "name": "Dadish 2",
   "url": "offline/dadish-2.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Hhl7Y82uElpkBSUY0dYc3etmpqLrlSrqeE3A78KTNw&s=10"
  },
  {
   "name": "Dadish 3",
   "url": "offline/dadish-3.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1OUB-M6Uj0yzVqUdY-vpYxVpxwej_lu1cn0Q8bXEKnQ&s=10"
  },
  {
   "name": "Deadly Descent",
   "url": "offline/deadly-descent.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSdIO0GKfAmjvPJSug3ZiuZFHPVjMf03rGwDuZXNBUA&s=10"
  },
  {
   "name": "Death Chase",
   "url": "offline/death-chase.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHRxVsSVrBZcydfu9n5G7L4Um49VVR9NkMT-qSQr-Bqw&s=10"
  },
  {
   "name": "Death Run 3D",
   "url": "offline/death-run-3D.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_vky8ismpqWIqfuqwSqNOxUajvdZoHSUNT2P_QQjtA&s=10"
  },
  {
   "name": "Demolition Derby Crash Racing",
   "url": "offline/demolition-derby-crash-racing.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5W8PBBaWrH9h7MKmGB4YB1LwGTE2QJxK3nJUnFQFgdg&s=10"
  },
  {
   "name": "Doodle Jump",
   "url": "offline/doodle-jump.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1s1DU7zpTSed4C9O0KO3AnbFwc3gCrKaTG0MawcL2Q&s=10"
  },
  {
   "name": "Draw Climber",
   "url": "offline/draw-climber.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToGYlJFVOKujmQlhyblQmXoBzd02BRLsxYFY5Ntgbmxw&s=10"
  },
  {
   "name": "Dreadhead Parkour",
   "url": "offline/dreadhead-parkour.htm",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sCQC7rETWUmF0Whet61O5eYnKV_0y5wRbFF3USReZg&s=10"
  },
  {
   "name": "Drift Boss",
   "url": "offline/drift-boss.htm",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGMsRvnoyfmIs9zA-38KI4aFvkiTNjun9mOAapqzMyGw&s=10"
  },
  {
   "name": "Drift Hunters Pro",
   "url": "offline/drift-hunters-pro.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHleIXPLplj3ndEdPi0ForLfAa44IMAHF-CR6VNK-LA&s"
  },
  {
   "name": "Drive Mad",
   "url": "offline/drive-mad.htm",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROtJhDXcSWvyTXNHtHiHL3L-yAJreRPlN9VpHeS-jASw&s=10"
  },
  {
   "name": "Duck Life",
   "url": "offline/duck-life.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm9AU6-03qwD0pTlStu6ETJISS7TvL3QT5c46KZk6g7w&s"
  },
  {
   "name": "Duck Life 2",
   "url": "offline/duck-life-2.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzdm3-VMSXX1tq9k_Ppw2RJcT2ivXHBck1cN7x48BLuA&s=10"
  },
  {
   "name": "Duck Life 3",
   "url": "offline/duck-life-3.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfPeIILLqL6EUmJyl99Kk0NM-W2Ab8hBibLgIcShaD6w&s=10"
  },
  {
   "name": "Duck Life 4",
   "url": "offline/duck-life-4.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTly3wNruvslxkJKK7FcH7GRT4YO5XX_D4aIO-6Ms6Y-Q&s=10"
  },
  {
   "name": "Duck Life 5",
   "url": "offline/duck-life-5.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyhhDdK7uOZ9RMKx9gEJ6do_sU9VV8ZEh73wpDe0QuQ&s"
  },
  {
   "name": "Ducklings Io",
   "url": "offline/ducklings-io.html",
-  "img": ""
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEWpJ6Sp_dg-0PkbP22t1592tG3ZqX1PwZyGYv7teKg&s=10"
  },
  {
   "name": "Eagle Ride",
